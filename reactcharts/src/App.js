@@ -13,13 +13,12 @@ class App extends Component {
 
     }
   }
-
   async componentWillMount() {
    await this.fetchData();
      this.getChartData();
   }
   async fetchData(){
-     const commits_fetch = await fetch('https://api.github.com/repos/dasaCoder/se_blog/stats/contributors?access_token=15d7d8c6be378b643161d81ae059128412c084f6');
+     const commits_fetch = await fetch('https://api.github.com/repos/dasaCoder/se_blog/stats/contributors');
     const commits_json = await commits_fetch.json();
     const commitsBy_user = await commits_json.map(user => ({
       userName: user.author.login,
@@ -30,7 +29,6 @@ class App extends Component {
     console.log('check');
     
   }
-
   async getChartData() {
     // Ajax calls here
     const {chartData,array,check} =this.state;
