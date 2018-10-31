@@ -2,3 +2,5 @@ Constructor()
 Render()
 Render Child Compenents()
 ComponentDidMount()
+
+Class Componenets and Functional Compoenents
