@@ -4,3 +4,4 @@ Render Child Compenents()
 ComponentDidMount()
 
 ComponentWillMount is depriciated now!
+Asynchrounous nature of javascript
