@@ -3,5 +3,9 @@ Render()
 Render Child Compenents()
 ComponentDidMount()
 
+
 ComponentWillMount is depriciated now!
 Asynchrounous nature of javascript
+
+Class Componenets and Functional Compoenents
+
